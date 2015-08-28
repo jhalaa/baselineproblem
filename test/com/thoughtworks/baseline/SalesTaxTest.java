@@ -8,7 +8,7 @@ public class SalesTaxTest {
 
     @Test
     public void basicSalesTaxIfItemIsBookIsZero() {
-        SalesTax salestax=new SalesTax("book");
+        SalesTax salestax=new SalesTax("1 book at 12.49");
         assertEquals(0.0,salestax.basicSalesTax());
 
     }
@@ -28,7 +28,7 @@ public class SalesTaxTest {
     }
 
     @Test
-    public void basicSalesTaxIfItemIsSingleChocolateIsZero() {
+    public void basicSalesTaxIfSingleItemIsChocolatesIsZero() {
         SalesTax salestax=new SalesTax("chocolate");
         assertEquals(0.0,salestax.basicSalesTax());
 

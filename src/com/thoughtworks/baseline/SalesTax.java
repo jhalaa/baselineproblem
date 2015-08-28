@@ -1,16 +1,18 @@
 package com.thoughtworks.baseline;
 
-public class SalesTax {
+import java.util.Arrays;
+import java.util.List;
 
-    private String productType;
+public class SalesTax {
+    String str[];
     SalesTax(String s)
     {
-        productType=s;
-
+        str=s.split(" ");
     }
     public double basicSalesTax()
     {
-        if(productType == "book" || productType == "pills" || productType == "chocolates" || productType == "chocolate" )
+        List l1= Arrays.asList(str);
+        if(l1.contains("book") || l1.contains("pills") || l1.contains("chocolates") || l1.contains("chocolate") )
             return 0.0;
         return 1.0;
     }
