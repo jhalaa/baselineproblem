@@ -10,7 +10,7 @@ public class SalesTax {
     }
     public double basicSalesTax()
     {
-        if(productType == "book" || productType == "pills" )
+        if(productType == "book" || productType == "pills" || productType == "chocolates" )
             return 0.0;
         return 1.0;
     }
