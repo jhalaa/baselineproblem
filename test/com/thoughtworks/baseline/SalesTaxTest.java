@@ -27,4 +27,11 @@ public class SalesTaxTest {
 
     }
 
+    @Test
+    public void basicSalesTaxIfItemIsSingleChocolateIsZero() {
+        SalesTax salestax=new SalesTax("chocolate");
+        assertEquals(0.0,salestax.basicSalesTax());
+
+    }
+
 }
