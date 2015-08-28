@@ -4,9 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SalesTax {
-    String str[];
+    private String str[];
+    private int quantity;
     SalesTax(String s) {
         str = s.split(" ");
+        quantity = Integer.parseInt(str[0]);
     }
 
     public double basicSalesTax() {
