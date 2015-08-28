@@ -18,6 +18,9 @@ public class SalesTax {
     }
 
     public double importTax() {
+        List l1= Arrays.asList(str);
+        if(l1.contains("imported"))
+            return 5;
         return 0;
     }
 }
