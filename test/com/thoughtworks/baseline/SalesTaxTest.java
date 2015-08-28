@@ -12,4 +12,12 @@ public class SalesTaxTest {
         assertEquals(0.0,salestax.basicSalesTax());
 
     }
+
+    @Test
+    public void basicSalesTaxIfItemIsMedicinesIsZero() {
+        SalesTax salestax=new SalesTax("pills");
+        assertEquals(0.0,salestax.basicSalesTax());
+
+    }
+
 }
