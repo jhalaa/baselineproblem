@@ -14,7 +14,7 @@ public class SalesTax {
         List l1= Arrays.asList(str);
         if(l1.contains("book") || l1.contains("pills") || l1.contains("chocolates") || l1.contains("chocolate") )
             return 0.0;
-        return 1.0;
+        return 10.0;
     }
 
     public double importTax() {

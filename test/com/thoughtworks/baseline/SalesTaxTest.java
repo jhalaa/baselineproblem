@@ -43,4 +43,10 @@ public class SalesTaxTest {
         assertEquals(5.0,salestax.importTax());
     }
 
+    @Test
+    public void salesTaxIfItemIsNotBookOrMedicinesOrFoodIsTen() {
+        SalesTax salestax=new SalesTax("imported perfume");
+        assertEquals(10.0,salestax.basicSalesTax());
+    }
+
 }
