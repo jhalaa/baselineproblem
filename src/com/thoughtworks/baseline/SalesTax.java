@@ -16,4 +16,8 @@ public class SalesTax {
             return 0.0;
         return 1.0;
     }
+
+    public double importTax() {
+        return 0;
+    }
 }

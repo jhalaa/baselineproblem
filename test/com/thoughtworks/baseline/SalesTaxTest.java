@@ -34,4 +34,11 @@ public class SalesTaxTest {
 
     }
 
+    @Test
+    public void importTaxIfItemIsNotImportedIsZero() {
+        SalesTax salestax=new SalesTax("chocolate");
+        assertEquals(0.0,salestax.importTax());
+
+    }
+
 }
